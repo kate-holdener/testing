@@ -34,4 +34,12 @@ public class GameControllerTwoPlayer implements ControllerInterface
          currentPiece = TicTacToePiece.X;
       }
    }
+
+   public TicTacToeGUI getGUI() {
+      return this.view;
+   }
+
+   public TicTacToePiece getCurrentPiece() {
+      return this.currentPiece;
+   }
 }

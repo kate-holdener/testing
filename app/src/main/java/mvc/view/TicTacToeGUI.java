@@ -10,7 +10,7 @@ import javax.swing.*;
 
 public class TicTacToeGUI implements ActionListener, GameObserver
 {
-   TicTacToeButtons buttons;
+   protected TicTacToeButtons buttons;
    JFrame mainFrame;
    JPanel mainPanel;
    JLabel instructions;

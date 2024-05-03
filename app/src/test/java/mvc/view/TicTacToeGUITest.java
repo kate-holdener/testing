@@ -31,5 +31,15 @@ public class TicTacToeGUITest {
 
     @Test
     public void testFirstMove() {
+        TicTacToeGUI gui = controller.getGUI();
+        TicTacToeButtons buttons = gui.buttons;
+        TicTacToeButton [] buttonArray = buttons.buttons;
+        TicTacToePiece myPiece = controller.getCurrentPiece();
+
+        buttonArray[0].doClick();
+
+        TicTacToePiece piece = board.getTicTacToePiece(0,0);
+        assertTrue("Expect that the piece is "+myPiece, myPiece == piece);
+        assertFalse("Button should be disabled", buttonArray[0].isEnabled());
     }
 }
