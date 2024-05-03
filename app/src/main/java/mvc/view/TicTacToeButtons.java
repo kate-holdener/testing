@@ -10,7 +10,7 @@ import javax.swing.*;
 public class TicTacToeButtons extends JPanel
 {
    private TicTacToeBoard board;
-   private TicTacToeButton []buttons;
+   protected TicTacToeButton []buttons;
 
    public TicTacToeButtons(TicTacToeBoard board, ActionListener buttonClickListener)
    {
